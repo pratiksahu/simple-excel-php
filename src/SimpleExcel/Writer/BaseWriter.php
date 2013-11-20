@@ -88,8 +88,8 @@ abstract class BaseWriter implements IWriter
         }
 
         // set HTTP response header
-        header('Content-Type: '.$this->content_type);
-        header('Content-Disposition: attachment; filename='.$filename.'.'.$this->file_extension);
+        //header('Content-Type: '.$this->content_type);
+        //header('Content-Disposition: attachment; filename='.$filename.'.'.$this->file_extension);
 
         $fp = fopen($target, 'w');
         fwrite($fp, $this->saveString());
